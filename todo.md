@@ -10,3 +10,9 @@
 - [x] Add the user-provided GoatCounter page-view script to the application shell.
 - [x] Update the privacy statement and application copy to disclose third-party page-view analytics.
 - [ ] Validate the build and push the published analytics update to `main`.
+
+## GitHub Pages Visual Repair
+
+- [x] Replace the development-only image URLs with GitHub Pages-compatible visual treatments.
+- [x] Remove the unintended blank image regions beside the local workspace cards.
+- [ ] Validate the repaired interface and push the static-hosting fix to `main`.
