@@ -1,0 +1,3 @@
+/** Field Desk PWA notice: a restrained, user-controlled prompt for a cached app update. */
+import { RefreshCw } from "lucide-react"; import { useRegisterSW } from "virtual:pwa-register/react"; import { Button } from "@/components/ui/button";
+export function PwaUpdateNotice({ updateText, laterText, heading }: { updateText: string; laterText: string; heading: string }) { const { needRefresh: [needRefresh], updateServiceWorker } = useRegisterSW(); if (!needRefresh) return null; return <div className="pwa-update" role="status"><RefreshCw size={16} /><span>{heading}</span><Button size="sm" onClick={() => updateServiceWorker(true)}>{updateText}</Button><Button size="sm" variant="ghost" onClick={() => window.location.reload()}>{laterText}</Button></div>; }
