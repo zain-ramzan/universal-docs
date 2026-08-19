@@ -18,7 +18,7 @@ The current milestone provides a responsive PWA shell, a first-run choice betwee
 
 ## Privacy Boundary
 
-Document bytes are stored through the selected local storage provider. UniversalDocs does not add a document-upload endpoint and does not ship analytics code. Browser permissions for camera, microphone, sharing, and folder access are requested only when the corresponding user action requires them.
+Document bytes are stored through the selected local storage provider. UniversalDocs does not add a document-upload endpoint. The public site uses GoatCounter page-view analytics, while document bytes, local filenames, extracted text, and camera media remain outside the analytics integration. Browser permissions for camera, microphone, sharing, and folder access are requested only when the corresponding user action requires them.
 
 ## Project Notes
 
